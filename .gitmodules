@@ -1,0 +1,13 @@
+[submodule "modules/bling"]
+	path = modules/bling
+	url = git@github.com:Aproxia-dev/bling.git
+	branch = playerctl_metadata_v2
+[submodule "modules/rubato"]
+	path = modules/rubato
+	url = git@github.com:andOrlando/rubato.git
+[submodule "modules/color"]
+	path = modules/color
+	url = git@github.com:andOrlando/color.git
+[submodule "modules/battery-widget"]
+	path = modules/battery-widget
+	url = git@github.com:Aire-One/awesome-battery_widget.git
