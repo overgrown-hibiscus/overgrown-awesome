@@ -10,10 +10,10 @@ local export = function(t)
 end
 
 
-export(require('themes.' .. conf.colorscheme .. '.cols'))
 export(require('themes.import'))
 export(require('themes.misc'))
 export(require('themes.recolor'))
 export(require('themes.settings'))
+export(require('themes.' .. conf.colorscheme .. '.cols'))
 
 beautiful.init(_M)

@@ -12,7 +12,7 @@ local users = {}
 
 local users_file = io.open(config_file, 'r')
 if users_file then
-	users = json.decode(assert(users_file):read())
+	users = json.decode(assert(users_file):read('*all'))
 	users_file:close()
 else
 	users = {
