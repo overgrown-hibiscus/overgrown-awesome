@@ -1,5 +1,5 @@
 local conf = require('config')
-local cols = require('themes.' .. conf.colorscheme .. '.cols')
+local cols = require('themes.' .. conf.colorscheme)
 local dpi  = require('beautiful').xresources.apply_dpi
 
 local _T = {

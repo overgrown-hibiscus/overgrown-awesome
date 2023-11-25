@@ -37,6 +37,11 @@ else
 			border_radius = 0,
 
 			bar = {
+				icon_pref = {
+					"theme",
+					"distro",
+					"awesome",
+				},
 				position = "left",
 				floating = true,
 				outline = true,

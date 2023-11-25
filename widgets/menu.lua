@@ -19,5 +19,9 @@ _M.mainmenu = awful.menu{
    }
 }
 
+_M.launcher = awful.widget.launcher {
+   image = beautiful.bar_icon,
+   menu = _M.mainmenu,
+}
 
 return _M

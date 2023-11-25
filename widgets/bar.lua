@@ -29,7 +29,7 @@ return function(s)
 		-- left widgets
 		{
 			layout = wibox.layout.fixed[dir],
-			menu.launcher,
+			{ menu.launcher, widget = wibox.container.margin, margins = 2},
 			ui.embox(s.widgets.taglist, {padding = 0}),
 		},
 		-- middle widgets

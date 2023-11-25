@@ -1,6 +1,6 @@
 local conf = require('config')
 local color = require('modules.color')
-local cols = require('themes.' .. conf.colorscheme .. '.cols')
+local cols = require('themes.' .. conf.colorscheme)
 
 local gcr = require('gears.color').recolor_image
 local cmb = require('helpers.image').combine

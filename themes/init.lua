@@ -14,6 +14,6 @@ export(require('themes.import'))
 export(require('themes.misc'))
 export(require('themes.recolor'))
 export(require('themes.settings'))
-export(require('themes.' .. conf.colorscheme .. '.cols'))
+export(require('themes.' .. conf.colorscheme))
 
 beautiful.init(_M)

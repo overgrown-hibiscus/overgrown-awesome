@@ -101,7 +101,6 @@ _M.embox = function(w, set)
 			hoveranim.target = 0
 			if old_wibox then
 				old_wibox.cursor = old_cursor
-				old_wibox = nil
 			end
 		end)
 	end
