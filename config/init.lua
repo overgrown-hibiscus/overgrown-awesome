@@ -116,7 +116,7 @@ local function autostart(t)
 end
 
 
-if sys.exists("/sys/class/power_supply") then
+if sys.exists("/sys/class/power_supply/AC0") then
 	autostart(user.autostart.laptop)
 else
 	autostart(user.autostart.desktop) 
