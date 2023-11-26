@@ -15,7 +15,7 @@ local cols = {}
 	cols.bg         = "#0f0f0f"
 	cols.fg         = "#f0f0f0"
 	cols.dbg        = "#191919"
-	cols.lbg        = "#4c4c4c"
+	cols.lbg        = cols.black
 	cols.dfg        = "#767676"
 	
 	cols.alert      = cols.red

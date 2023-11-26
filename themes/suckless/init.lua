@@ -27,6 +27,9 @@ cols.taglist_fg_focus = cols.white
 cols.bg_systray = cols.bg
 
 cols.tasklist_disable_icon = true
+cols.tasklist_plain_task_name = true,
+cols.tasklist_disable_task_name = false,
+
 cols.tasklist_bg_normal = cols.bg
 cols.tasklist_fg_normal = cols.fg
 cols.tasklist_bg_focus  = cols.dbg

@@ -12,16 +12,25 @@ local _T = {
 	fg_urgent     = cols.fg,
 	fg_minimize   = cols.fg,
 	
+	taglist_bg_empty    = cols.lbg,
+	taglist_bg_occupied = cols.lbg,
 	taglist_bg_focus    = cols.taglist,
-	taglist_fg_occupied = cols.taglist,
+
 	taglist_fg_empty    = cols.dfg,
+	taglist_fg_occupied = cols.taglist,
 	taglist_fg_focus    = cols.bg,
+
+	tasklist_bg_normal = '#00000000',
+	tasklist_bg_focus  = '#00000000',
+	tasklist_bg_urgent = '#00000000',
+	tasklist_bg_minimize = '#00000000',
 	
 	titlebar_bg        = '#00000000',
 	titlebar_bg_normal = '#00000000',
 	titlebar_bg_focus  = '#00000000',
 	titlebar_bg_urgent = '#00000000',
 	
+	tasklist_disable_task_name = true,
 	tasklist_plain_task_name = true,
 	
 	bg_systray = cols.dbg,

@@ -7,6 +7,7 @@ local conf = require('config')
 local menu = require('widgets.menu')
 local taglist = require('widgets.bar.taglist')
 local tasklist = require('widgets.bar.tasklist')
+local tagsklist = require('widgets.bar.tagsklist')
 local layoutbox = require('widgets.bar.layoutbox')
 
 local contains = require('helpers.table').contains
@@ -20,7 +21,7 @@ return function(s)
 		layoutbox		= layoutbox(s),
 		taglist			= taglist(s, dir),
 		tasklist		= tasklist(s, dir),
-		keyboardlayout	= awful.widget.keyboardlayout(),
+		tagsklist   = tagsklist(s, dir),
 		systray			= wibox.widget{widget = wibox.widget.systray, horizontal = (dir == 'horizontal')},
 		textclock		= require('widgets.bar.clock'),
 	}
@@ -29,11 +30,20 @@ return function(s)
 		-- left widgets
 		{
 			layout = wibox.layout.fixed[dir],
-			{ menu.launcher, widget = wibox.container.margin, margins = 2},
-			ui.embox(s.widgets.taglist, {padding = 0}),
+			{
+				menu.launcher,
+				widget = wibox.container.margin,
+				margins = 4
+			},
 		},
 		-- middle widgets
-		s.widgets.tasklist,
+		{
+			nil,
+			wibox.container.margin(s.widgets.tagsklist, 4, 4, 4, 4),
+			nil,
+			layout = wibox.layout.align[dir],
+			expand = 'outside',
+		},
 		-- right widgets
 		{
 			layout = wibox.layout.fixed[dir],
