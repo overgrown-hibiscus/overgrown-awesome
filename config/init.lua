@@ -3,6 +3,7 @@ local awful = require('awful')
 local gfs = require('gears.filesystem')
 local string = require('helpers.string')
 
+local home = os.getenv("HOME")
 local data_home = os.getenv("XDG_DATA_HOME")
 local config_path =  (data_home or home .. "/.local/share") .. "/overgrown/"
 local config_file = config_path .. "users.json"
