@@ -1,9 +1,8 @@
 local json = require('modules.json')
 local awful = require('awful')
+local gfs = require('gears.filesystem')
 local string = require('helpers.string')
-local sys	= require('helpers.sys')
 
-local home = os.getenv("HOME")
 local data_home = os.getenv("XDG_DATA_HOME")
 local config_path =  (data_home or home .. "/.local/share") .. "/overgrown/"
 local config_file = config_path .. "users.json"
@@ -116,7 +115,7 @@ local function autostart(t)
 end
 
 
-if sys.exists("/sys/class/power_supply/AC0") then
+if gfs.dir_readable("/sys/class/power_supply/BAT0") then
 	autostart(user.autostart.laptop)
 else
 	autostart(user.autostart.desktop) 
