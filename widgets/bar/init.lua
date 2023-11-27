@@ -35,15 +35,10 @@ return function(s)
 				widget = wibox.container.margin,
 				margins = 4
 			},
+			wibox.container.margin(s.widgets.tagsklist, 4, 4, 4, 4),
 		},
 		-- middle widgets
-		{
-			nil,
-			wibox.container.margin(s.widgets.tagsklist, 4, 4, 4, 4),
-			nil,
-			layout = wibox.layout.align[dir],
-			expand = 'outside',
-		},
+		nil,
 		-- right widgets
 		{
 			layout = wibox.layout.fixed[dir],
