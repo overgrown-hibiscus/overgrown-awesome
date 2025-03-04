@@ -57,7 +57,7 @@ return function(s)
 		w = {
 			w,
 			widget = wibox.container.background,
-			shape = ui.shape.rrect(conf.border_radius),
+			shape = ui.shape.rrect(conf.corner_radius),
 			bg = beautiful.bg,
 		}
 	end
@@ -70,7 +70,7 @@ return function(s)
 				margins = conf.border_size,
 			},
 			widget = wibox.container.background,
-			shape = conf.bar.floating and ui.shape.rrect(conf.border_radius + conf.border_size) or ui.shape.rect(),
+			shape = conf.bar.floating and ui.shape.rrect(conf.corner_radius + conf.border_size) or ui.shape.rect(),
 			bg = beautiful.lbg,
 		}
 	end

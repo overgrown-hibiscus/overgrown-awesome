@@ -37,10 +37,10 @@ local _T = {
 	
 	tabbar_disable = true,
 	mstab_bar_padding = dpi(conf.gaps),
-	mstab_border_radius = dpi(conf.border_radius),
+	mstab_border_radius = dpi(conf.corner_radius),
 	mstab_tabbar_style = "boxes",
 	
-	border_width = dpi(0),
+  border_width = 0,
 	menu_height  = dpi(20),
 	menu_width   = dpi(150),
 	icon_theme   = "Papirus",

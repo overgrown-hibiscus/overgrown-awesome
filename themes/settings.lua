@@ -8,8 +8,6 @@ local assets_path = 'themes.assets.'
 local _T = {
 	playerctl_player = { "mpd", "spotify", "%any" },
 	playerctl_ignore = { "firefox" },
-
-	border_width = dpi(conf.border_size)
 }
 
 local icons = {}

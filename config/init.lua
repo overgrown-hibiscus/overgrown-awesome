@@ -48,6 +48,11 @@ else
 				size = 36
 			},
 
+      titlebar = {
+        position = "top",
+        buttons = "end",
+      },
+
 			autostart = {
 				desktop = {
 					on_start = {},

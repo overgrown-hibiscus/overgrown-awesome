@@ -1,5 +1,5 @@
 local awful = require('awful')
-local beautiful = require('beautiful')
+-- local beautiful = require('beautiful')
 local gears = require('gears')
 local gfs = require('gears.filesystem')
 local wibox = require('wibox')

@@ -6,7 +6,16 @@ local color = require('modules.color')
 local rubato = require('modules.rubato')
 
 local _M = {}
- 
+
+_M.opposite = function(place)
+  return (place == "top")    and "bottom"
+      or (place == "bottom") and "top"
+      or (place == "right")  and "left"
+      or (place == "left")   and "right"
+      or (place == "up")     and "down"
+      or (place == "down")   and "up"
+      or nil
+end
 _M.shape = {}
 _M.shape.rect = function()
 	return function(cr, w, h)
@@ -41,7 +50,7 @@ _M.embox = function(w, set)
 	local s = {
 		padding = set.padding or 2,
 		margin = set.margin or set.margins or 4,
-		shape = set.shape or _M.shape.rrect(beautiful.border_radius),
+		shape = set.shape or _M.shape.rrect(beautiful.corner_radius),
 		dbg = color.color { hex = set.dbg or beautiful.dbg },
 		lbg = color.color { hex = set.lbg or beautiful.lbg },
 		tbg = color.color { hex = set.tbg or beautiful.tbg },

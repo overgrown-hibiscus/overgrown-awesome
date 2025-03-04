@@ -63,7 +63,7 @@ return function(s, dir)
             widget = wibox.container.background,
          },
          widget = wibox.container.background,
-         shape = ui.shape.rrect(beautiful.border_radius),
+         shape = ui.shape.rrect(beautiful.corner_radius),
          
          create_callback = function(self, t, i, _)
             self:get_children_by_id("taginfo_role")[1]:insert(3, 

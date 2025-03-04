@@ -8,7 +8,7 @@ local _T = {
 
 	useless_gap		= dpi(conf.gaps),
 	border_size		= dpi(conf.border_size),
-	border_radius	= dpi(conf.border_radius),
+	corner_radius	= dpi(conf.corner_radius),
 }
 
 return _T

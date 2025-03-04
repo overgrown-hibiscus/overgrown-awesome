@@ -76,14 +76,14 @@ awful.keyboard.append_global_keybindings{
    },
    awful.key{
       modifiers   = {mod.super},
-      key         = '#60',
+      key         = 'period',
       description = 'focus the next screen',
       group       = 'screen',
       on_press    = function() awful.screen.focus_relative(1) end,
    },
    awful.key{
       modifiers   = {mod.super},
-      key         = '#59',
+      key         = 'comma',
       description = 'focus the previous screen',
       group       = 'screen',
       on_press    = function() awful.screen.focus_relative(-1) end,
